@@ -73,6 +73,18 @@
     bottom: 0;
 }
 
+.autoScroll{
+    width: 150px;
+    height: 20px;
+    margin: 10px 0;
+    background: transparent;
+    color: whitesmoke;
+    position: absolute;
+    right: 100%;
+    cursor: pointer;
+    z-index: 999;
+}
+
 /*
 EXTRA: in questo esempio gli accordion vengono creati
 usando 2 bordi di un quadratino ruotato di 45 gradi

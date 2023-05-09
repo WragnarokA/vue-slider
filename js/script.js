@@ -50,13 +50,13 @@ createApp({
             if (this.activeImage > 4) {
                 this.activeImage = 0;
             } 
+            console.log("nextSlide");
+         },
+  
+     } 
 
                 
 
-           console.log("nextSlide");
-        }
-
-    } 
 
 }).mount('#app')
         

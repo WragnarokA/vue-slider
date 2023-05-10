@@ -51,16 +51,21 @@ createApp({
             console.log("nextSlide");
          },
          setAutoScroll( ){
-            if (this.autoscroll ==null) {
-                this.autoscroll = setInterval(()=>{
-                    this.nextSlide();
-                },500)
+            if (this.autoscroll == null) {
+                this.setAutoScrollOn();
             } else {
-                clearInterval(this.autoscroll)
-                this.autoscroll = null;
-                
+                this.setAutoScrollOff();
             }
-         },
+        },
+        setAutoScrollOn(){
+            this.autoscroll = setInterval(()=> {
+            this.nextSlide();
+        },500)
+        },
+        setAutoScrollOff(){
+            clearInterval(this.autoscroll);
+            this.autoscroll = null;
+        },
   
      } 
 
